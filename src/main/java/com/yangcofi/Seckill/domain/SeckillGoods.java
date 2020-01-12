@@ -1,7 +1,14 @@
 package com.yangcofi.Seckill.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class SeckillGoods {
     private Long id;
     private Long goodsId;
@@ -9,44 +16,5 @@ public class SeckillGoods {
     private Integer stockCount;
     private Date startDate;
     private Date endDate;
-
-    public Double getMiaoshaPrice() {
-        return miaoshaPrice;
-    }
-    public void setMiaoshaPrice(Double miaoshaPrice) {
-        this.miaoshaPrice = miaoshaPrice;
-    }
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public Long getGoodsId() {
-        return goodsId;
-    }
-    public void setGoodsId(Long goodsId) {
-        this.goodsId = goodsId;
-    }
-    public Integer getStockCount() {
-        return stockCount;
-    }
-    public void setStockCount(Integer stockCount) {
-        this.stockCount = stockCount;
-    }
-    public Date getStartDate() {
-        return startDate;
-    }
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-    public Date getEndDate() {
-        return endDate;
-    }
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
-
-
 }
 
